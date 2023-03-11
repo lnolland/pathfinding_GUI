@@ -8,4 +8,4 @@ a window with two blanck grids pop up:
 IMAGE
 <br>
 
-The first left click lets the user place the start (the orange square), the second left click
+The first left click lets the user place the start (the orange square), the second left click lets the user place the end (cyan square). When the start and the end are placed, the left clicks always place walls. the right click permit the user to remove a tile already place, if the end or the start are removed they will be the next left clicks. 
