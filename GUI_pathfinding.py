@@ -125,7 +125,11 @@ def algorithm(draw, grid, start, alg, end = None):
         while not open_set.empty() and is_possible == None: #   main loop of the algorithm
             for event in pygame.event.get(): # to quit while the algorithm is working
                 if event.type == pygame.QUIT:
+                    pygame.display.quit()
                     pygame.quit()
+                    exit()
+                    run = False
+                    sys.exit()
 
             current = open_set.get()[2] # = current spot object (0 being the f or g score and 1 the count of the spot) + remove it from queue
             open_set_hash.remove(current)
@@ -285,7 +289,11 @@ def main(win, width):
         draw(win, grids, ROWS, width, font)
         for event in pygame.event.get(): # to quit pygame
             if event.type == pygame.QUIT:
+                pygame.display.quit()
+                pygame.quit()
+                exit()
                 run = False
+                sys.exit()
 
             if pygame.mouse.get_pressed()[0]:# left click
                 if not is_started:
