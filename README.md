@@ -10,12 +10,15 @@ It means Djikstra will take more time to found a path than A star.
 However, Djikstra doesn't need to know here is the end, so if we need to find a path without knowing where to go, we can't use A star but we can use Djikstra.
 
 
-# When you start running the project 
-a window with two blanck grids pop up:
+# How to use the program
+
+## 1. The program just started
+When the programe started running a window with two blanck grids pop up:
 
 
-IMAGE GRILLE VIDE
+![Capture_gui_start](https://user-images.githubusercontent.com/127619531/224558583-4215d4db-3790-4047-8b10-d6fdc0980114.PNG)
 
+## 2. How to place the tiles
 The left click lets the user place the start (the orange square), the end (cyan square) and the walls (black tiles) in this order of priority. 
 If there is no start, it will place the start, if there is a start but no end, it will place the end and if both start and end are already placed, it will place a wall.
 The user can remove a tile place simply by right clicking it. 
@@ -23,19 +26,22 @@ The user can also reset the grids just by pressing the C key.
 The user can also randomize the map by pressing the "random map" button.
 
 
-IMAGE GRILLE PLEINE
+![Capture_gui_map](https://user-images.githubusercontent.com/127619531/224558748-89b0772a-83a5-4e97-8d9f-782543caa9fb.PNG)
 
+## 3. How to run the algorithms
 Once the user choosed how he wanted to placed every tiles, the user can start running the algorithm by pressing the SPACE key. 
 The A star algorithm will start running and will try to find the shortest path, if the A star found one, the Djikstra algorithm start.
 The shortest path will be highlighted by coloring yellow the tiles of the path between the start and the end.
 A tile that was treated by an algorithm will be colored red and the next waves of tiles to be treated are colored green.
 
 
-IMAGE GRILLE RUN
+![Capture_gui_run](https://user-images.githubusercontent.com/127619531/224558764-fdd80f7f-d048-45ad-9331-08dc87363059.PNG)
 
-If the A star algorithm doesn't found any path and can't progress any further, the Djikstra algorithm will not start.
+## What happens when the algorithm doesn't found a path
+If the A star algorithm doesn't found any path and can't progress any further (if there is no green tiles to explore), the Djikstra algorithm will not start.
 
-IMAGE GRILLE BLOQUE
+![Capture_gui_bloque](https://user-images.githubusercontent.com/127619531/224559077-5ef5cbb0-8a0a-4ed3-b515-22d1f88a3388.PNG)
+
  
 
 
